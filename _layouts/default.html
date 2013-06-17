@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"/>
+	<head>
+	<title>Szkoła Podstawowa w Rogoźnicy {{ page.title }}</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!-- <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" /> nie działa-->
+	<meta name="description" content=",Strona Szkoły Podstawoej w Rogoźnicy,">
+	<meta name="keywords" content="Szkoła Podstawowa, Rogoźnica">
+	<meta name="Robots" content="All, follow">
+	<meta name="author" content="hasiula">
+	<meta http-equiv="Content-Language" content="pl"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+</head>
+<body>
+	<!-- NavBar-->
+	<div class="navbar navbar-fixed-top"> <!--  navbar-inverse navbar-fixed-top -->
+		<div class="navbar-inner">
+			<div class="container">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="brand" href="./index.html">Szkoła Podstawowa w Rudnikach</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li class="">
+							<a href="./news.html">Aktualności</a>
+						</li>
+						<li class="">
+							<a href="./events.html">Wydarzenia</a>
+						</li>
+						<li class="">
+							<a href="./for student.html">Dla ucznia</a>
+						</li>
+						<li class="">
+							<a href="./galery.html">Galeria</a>
+						</li>
+						<li class="">
+							<a href="./information and contact.html">Informacje i kontakt</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- main -->
+	{{ content }}
+	
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
