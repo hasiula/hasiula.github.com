@@ -15,11 +15,21 @@ title: Blogging Like a Hacker
 				<ul>
 					{% for post in site.posts %}
 					<li>
-						<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+						<div class="media">
+							<a class="pull-left" href="#">
+								<img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="./galery/01.jpg">
+							</a>
+							<div class="media-body">
+								<h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+								<div class="content">
+									{{ post.content }}
+								</div>
+							</div>
+						</div>
+							
+					
+
 					</li>
-					<div class="content">
-						{{ post.content }}
-					</div>
 					{% endfor %}
 				</ul>
 			</div>
