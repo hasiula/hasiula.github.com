@@ -15,12 +15,28 @@ title: Blogging Like a Hacker
 			<ul>
 				{% for post in site.posts %}
 				<li>
-					<a href="{{ post.url }}">{{ post.title }}</a>
+					<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 				</li>
+				<div class="content">
+					{{ post.content }}
+				</div>
 				{% endfor %}
 			</ul>
 		</div>
 	</div>
+	
+	
+			<div>
+		{% for post in paginator.posts %}
+		<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+		<p class="author">
+			<span class="date">{{ post.date }}</span>
+		</p>
+		<div class="content">
+			{{ post.content }}
+		</div>
+		{% endfor %}
+		</div>
 		
 	<div class="footer navbar-fixed-botom"> <!--  navbar-inverse navbar-fixed-top -->
 	</div>
